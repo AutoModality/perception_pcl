@@ -1,0 +1,5 @@
+ros-melodic-am-perception-pcl (1.7.1) unstable; urgency=medium
+
+   * Debian packaging of PCL Libarary
+
+  -- AutoModality <dev@automodality.com>  Sun, 01 Jan 2020 00:00:00 +0000
