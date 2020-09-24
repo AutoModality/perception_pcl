@@ -18,8 +18,7 @@ jobs:
         id: package
         uses: AutoModality/action-package-debian-ros@v4
         with:
-          branch: ${{ env.GITHUB_REF_SLUG }}
-          build-number: ${{ github.run_number }}
+          version: ${{ env.GITHUB_REF_SLUG }}-${{ github.run_number }}
           release-repo-entitlement: ${{ secrets.CLOUDSMITH_READ_RELEASE_ENTITLEMENT }}
       - name: The generated package
         run: echo "The artifact is ${{ steps.package.outputs.artifact-path }}"
