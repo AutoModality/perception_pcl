@@ -22,4 +22,5 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
 				 libflann-dev,
 				 ros-melodic-tf,
 				 ros-melodic-tf2-eigen,
+Replaces: ros-melodic-pcl-conversion, ros-melodic-pcl-ros
 Description: contains packages including pcl_ros and pcl_conversions

@@ -1,5 +1,14 @@
 #!/usr/bin/make -f
-export DH_VERBOSE = 1
+#export DH_VERBOSE = 1
+
+INSTALL_DIR=debian/ros-melodic-am-perception-pcl/opt/ros/melodic
 
 %:
 	dh $@
+
+override_dh_auto_install:
+	# for some reason, install: in the makefile isn't being called???
+	mkdir -p ${INSTALL_DIR}
+	cp -r install/include ${INSTALL_DIR}
+	cp -r install/lib ${INSTALL_DIR}
+	cp -r install/share ${INSTALL_DIR}

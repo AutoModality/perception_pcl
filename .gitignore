@@ -5,3 +5,9 @@ build
 devel
 install
 logs
+debian/ros-melodic-am-perception-pcl
+src
+.catkin_workspace
+*.deb
+*.log
+*.substvars
